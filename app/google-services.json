@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "595981286729",
+    "firebase_url": "https://direcctorio-ae9cf.firebaseio.com",
+    "project_id": "direcctorio-ae9cf",
+    "storage_bucket": "direcctorio-ae9cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595981286729:android:f2f8578917c3771a2dee98",
+        "android_client_info": {
+          "package_name": "com.example.prueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595981286729-c8q8ntcnndflirubv54araif6b8bb473.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAy_VJC2sLSDQo95iRVo10HpioAZVwdEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595981286729-c8q8ntcnndflirubv54araif6b8bb473.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

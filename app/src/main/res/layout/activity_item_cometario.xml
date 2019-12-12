@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item_cometario">
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/fd_comentario"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_comentario"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="9dp"
+            android:text="TextView"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:id="@+id/rangin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:scrollbarSize="4sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
