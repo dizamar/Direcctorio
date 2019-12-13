@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_item.view.*
 
 class Adapteritem(val items : ArrayList<String>, val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-       return ViewHolder(LayoutInflater.from(context).inflate(R.layout.activity_item,parent,false))
+        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.activity_item,parent,false))
         //return RecyclerView.ViewHolder(LayoutInflater.from(context).inflate(R.layout.activity_item,parent,false))
     }
 
@@ -18,7 +18,7 @@ class Adapteritem(val items : ArrayList<String>, val context: Context) : Recycle
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-          holder.itemView.txt_item_p1.text = items.get(position)
+        holder.itemView.txt_item_p1.text = items.get(position)
         //holder?.tvAnimalType?.text = items.get(position)
     }
 

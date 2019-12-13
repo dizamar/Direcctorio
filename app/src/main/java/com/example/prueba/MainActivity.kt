@@ -17,6 +17,7 @@ import kotlin.properties.Delegates
 
 
 class MainActivity : AppCompatActivity() {
+
     private val TAG = "LoginActivity"
     //global variables
     private var email by Delegates.notNull<String>()
@@ -25,19 +26,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etPassword: EditText
     private lateinit var mProgressBar: ProgressDialog
     private lateinit var mAuth: FirebaseAuth
-    //private lateinit var base: FirebaseDatabase
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register_act)
-        // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance()
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true)
-        // Write a string to node "disconnectmessage" when this client loses connection
-        FirebaseDatabase.getInstance().getReference("disconnectmessage").onDisconnect().setValue("I disconnected!")
+        setContentView(R.layout.activity_login)
+        initialise()
+
 
     }
     private fun initialise() {
@@ -45,9 +39,10 @@ class MainActivity : AppCompatActivity() {
         etPassword = findViewById(R.id.etPassword)
         mProgressBar = ProgressDialog(this)
         mAuth = FirebaseAuth.getInstance()
+
     }
 
-     fun loginUser(view: View) {
+     private fun loginUser() {
         //Obtenemos usuario y contraseña
         email = etEmail.text.toString()
         password = etPassword.text.toString()
@@ -89,15 +84,14 @@ class MainActivity : AppCompatActivity() {
     /* Tenemos que crear nuestros métodos con el mismo nombre que le agregamos a nuestros botones en el atributo onclick y forzosamente tenemos que recibir un parámetro view para que sea reconocido como click de nuestro button ya que en view podemos modificar los atributos*/
 
     /*Primero creamos nuestro evento login dentro de este llamamos nuestro método loginUser al dar click en el botón se iniciara sesión */
-    /*fun login(view: View) {
+    fun login(view: View) {
         loginUser()
-    }*/
+    }
 
 /*Si se olvido de la contraseña lo enviaremos en la siguiente actividad nos marcara error porque necesitamos crear la actividad*/
 
     fun forgotPassword(view: View) {
-        startActivity(Intent(this,
-            olvidecontrasenia::class.java))
+        startActivity(Intent(this,olvide_contrasenia::class.java))
     }
 
 /*Si quiere registrarse lo enviaremos en la siguiente actividad nos marcara error porque necesitamos crear la actividad*/
