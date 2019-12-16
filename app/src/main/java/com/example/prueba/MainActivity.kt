@@ -4,15 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.text.TextUtils
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
-import com.google.firebase.database.FirebaseDatabase
 import kotlin.properties.Delegates
 
 

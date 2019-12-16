@@ -1,8 +1,18 @@
 package com.example.prueba
 
+
 import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
-data class Comi(
-    var oficio: String? = ""
-)
+class Comi {
+    var name: String? = null
+
+    constructor() {
+        // Default constructor required for calls to DataSnapshot.getValue(User.class)
+    }
+
+    constructor(username: String?) {
+        this.name = username
+
+    }
+}
