@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".perfil">
+    tools:context=".pantalla1">
 
     <EditText
         android:id="@+id/txt_com"
@@ -15,7 +15,6 @@
         android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,25 +26,11 @@
         android:layout_height="52dp"
         android:layout_marginStart="65dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="65dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.297"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_com" />
-
-    <ToggleButton
-        android:id="@+id/btn_com"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="450dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/btn_estilo_off"
-        android:text="ToggleButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rbar" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -71,5 +56,23 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <ToggleButton
+        android:id="@+id/txt_send"
+        style="@style/viewCustom"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onClicksend"
+        android:text="Comentar"
+        android:textColor="@android:color/white"
+        android:textOff="Comentar"
+        android:textOn="Comentar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
